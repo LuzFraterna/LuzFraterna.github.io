@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/* Estructura base */
+html, body {
+    height: 100%;       /* Que el body ocupe toda la pantalla */
+    margin: 0;          /* Quitar márgenes */
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido principal se expande */
+main {
+    flex: 1;
+}
+
+/* Footer siempre al final */
+footer {
+    margin-top: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3eafc;
+    margin: 0;
+    padding: 0;
+    color: #222244;
+}
+
+header {
+    background-color: #4b86b4;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 0 12px 0;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 24px;
+    left: 32px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 110px;
+    width: 110px;
+    object-fit: contain;
+}
+
+.options-interface {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.options-interface ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+.options-interface a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+    
+}
+.options-interface a:hover {
+    background: #fbed2a;
+}
+.login-btn {
+    background: #f5c401;
+    color: #581F18;
+}
+.login-btn:hover {
+    background: #b9a704;
+}
+ .options-interface a {
+        color: #fff;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 1vw;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .options-interface a:hover {
+        color: #ffcc00; /* Cambia a amarillo al pasar el mouse */
+    }
+
+main h1, main h2 {
+    color: #581F18;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 900;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.header-camps {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+.header-camp-img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+}
+
+footer {
+    background-color: #581F18;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 0;
+    position: right;
+    bottom: 10;
+    width: 100%;
+}
+
+.footer-social {
+    margin-top: 8px;
+}
+.footer-social a {
+    display: inline-block;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s;
+}
+.footer-social a:hover img {
+    filter: brightness(0.8) invert(0.7) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.image-camps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 40px 0;
+}
+.camp {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+    overflow: hidden;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.camp:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+.camp-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #e3eafc;
+}
+.camp-info {
+    padding: 16px;
+}
+.camp-info h3 {
+    margin-top: 0;
+    color: #581F18;
+}
+.camp-info p {
+    color: #222244;
+    font-size: 1rem;
+}
+
+.round-camp {
+    border-radius: 32px;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
+    border: 2px solid #e3eafc;
+    background: #fff;
+    padding: 16px 8px;
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.round-camp:hover {
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.22);
+    transform: scale(1.03);
+}
+.camp-title {
+    font-size: 2rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    color: #581F18;
+    margin-bottom: 8px;
+}
+/* Menú siempre alineado y adaptable */
+.options-interface ul {
+    display: flex;
+    flex-wrap: wrap;       /* Si no caben, bajan de línea */
+    gap: 1.2vw;            /* Espacio entre botones */
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Botones */
+.options-interface a {
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(12px, 1vw, 18px); /* Tamaño flexible con zoom */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Evita que se parta el texto */
+}
+
+/* Hover */
+.options-interface a:hover {
+    color: #ffcc00;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* evita desplazamiento horizontal */
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+

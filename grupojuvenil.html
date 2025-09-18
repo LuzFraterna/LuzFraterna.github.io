@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Grupo Juvenil - Luz Fraterna</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: #f4f6fb;
+    }
+
+    header {
+      background-color: #c3350d;
+      color: #fff;
+      width: 100%;
+    }
+
+    .content-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .round-box {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    .round-box h2 {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .round-box p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background-color: #7a1c02;
+      padding: 20px 40px;
+      border-top: 2px solid #e3eafc;
+      margin-top: 60px;
+      color: #fdfdfd;
+    }
+
+    footer h4 {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .footer-social img {
+      filter: invert(100%);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 16px 24px;">
+      <!-- Logo + Título -->
+      <div style="display: flex; align-items: center; gap: 14px; min-width: 0; margin-left: 5px;">
+        <img src="imagenes/logo.png" alt="Luz Fraterna Logo" 
+             style="height: 5vw; min-height: 40px; max-height: 70px; width: auto; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 6px rgba(44,62,80,0.12);">
+        <h1 class="main-title" 
+            style="font-size: clamp(20px, 1.8vw, 28px); margin: 0 0 0 8px; letter-spacing: 1.5px; color: #fff; white-space: nowrap;">
+            Luz Fraterna
+        </h1>
+      </div>
+
+      <!-- Menú -->
+      <nav class="options-interface" style="flex: 1; display: flex; justify-content: flex-end; margin-top: 10px;">
+        <ul style="display: flex; flex-wrap: wrap; gap: 1.2vw; justify-content: flex-end; margin: 0; padding: 0; list-style: none;">
+          <li><a href="index.html" style="color: #fff; font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: clamp(12px, 1vw, 18px); text-decoration: none;">Inicio</a></li>
+          <li><a href="about us.html" style="color: #fff; font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: clamp(12px, 1vw, 18px); text-decoration: none;">Sobre nosotros</a></li>
+          <li><a href="#contact" style="color: #fff; font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: clamp(12px, 1vw, 18px); text-decoration: none;">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <main class="content-container">
+    <section class="round-box">
+      <h2>Grupo Juvenil</h2>
+      <p>
+        El <strong>Grupo Juvenil de Luz Fraterna</strong> es un espacio dedicado al crecimiento espiritual,
+        humano y comunitario de los jóvenes de nuestro colegio y la parroquia. Aquí, los jóvenes
+        pueden fortalecer su fe, compartir experiencias significativas y construir lazos de amistad
+        bajo los valores franciscanos de paz, servicio y fraternidad.
+      </p>
+      <p>
+        Realizamos encuentros semanales con dinámicas, reflexiones, cantos, talleres y actividades
+        de servicio comunitario. También participamos en convivencias, misiones y celebraciones
+        especiales que nos ayudan a acercarnos más a Dios y a vivir el Evangelio en la vida diaria.
+      </p>
+      <p>
+        El grupo está abierto a todos los jóvenes que quieran compartir su alegría, descubrir su
+        vocación y ser parte activa de una comunidad de fe que ilumina con esperanza y amor.
+      </p>
+    </section>
+
+    <!-- Galería de imágenes -->
+    <section class="round-box">
+      <h2>Galería de actividades</h2>
+      <div class="gallery">
+        <img src="imagenes/gjuvenil1.jpg" alt="Reunión del grupo juvenil">
+        <img src="imagenes/gjuvenil2.jpg" alt="Dinámica grupal">
+        <img src="imagenes/gjuvenil3.jpg" alt="Taller espiritual">
+        <img src="imagenes/gjuvenil4.jpg" alt="Actividad al aire libre">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: auto; text-align: left; gap: 20px;">
+      <!-- Información de contacto -->
+      <div style="flex: 2; min-width: 250px;">
+        <h4>Contáctanos</h4>
+        <p><strong>Dirección:</strong> Calle 123 #45-67, Cali, Colombia</p>
+        <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+        <p><strong>Correo:</strong> contacto@luzfraterna.org</p>
+      </div>
+      <!-- Redes Sociales -->
+      <div style="flex: 1; min-width: 200px;">
+        <h4>Nuestras Redes</h4>
+        <div class="footer-social" style="display: flex; gap: 12px;">
+          <a href="https://facebook.com/yourpage" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24"></a>
+          <a href="https://twitter.com/yourpage" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" width="24"></a>
+          <a href="https://instagram.com/yourpage" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24"></a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px; font-size: 14px;">
+      <p>&copy; 2025 Luz Fraterna. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
